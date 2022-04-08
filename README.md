@@ -1,5 +1,5 @@
 # RCode
-For projects, tasks and tests written in R.
+For projects, tasks and tests written in R. Both uni projects and personal projects included.
 
 ## Linear Regression, Confidence Intervals and t-Tests
 **Code:** [2021_LinReg_CI_tTest.R](https://github.com/xiancaicai/RCode/blob/main/2021_LinReg_CI_tTest.R)
