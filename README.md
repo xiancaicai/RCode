@@ -19,6 +19,7 @@ Bootstrap sampling and estimation. (To compare Frequentist and Bayesian estimati
 **Code:** [2021_ChineseMNIST_NN.R](https://github.com/xiancaicai/RCode/blob/main/2021_ChineseMNIST_NN.R)
 
 ![Chinese Number Characters](chinesemnist.png)
+<img src="chinesemnist.png" width="100" height="100">
 
 Packages used: Keras, Magick, Tidyverse.
 
