@@ -1,5 +1,5 @@
 # RCode
-For some projects, tasks and tests written in R. Both uni projects and personal projects included.
+Some projects, tasks and tests written in R. Both uni projects and personal projects included.
 
 ## :pushpin: Linear Regression, Confidence Intervals and t-Tests
 **Code:** [LinReg_CI_tTest.R](https://github.com/xiancaicai/RCode/blob/main/LinReg_CI_tTest.R)
