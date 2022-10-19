@@ -1,12 +1,12 @@
 library(keras)
 library(tidyverse)
-load("chinese_mnistv2.RData")
-
-################################################################
-#Transformation from images to matrix
-
 library(magick)
 
+################################################################
+
+load("chinese_mnistv2.RData")
+
+#Transformation from images to matrix
 mnist_test <- NULL
 for(i in list.files(path = "U:\\Downloads\\archive\\data\\test", full.names = TRUE)) {
   input <- image_read(i)
@@ -15,7 +15,6 @@ for(i in list.files(path = "U:\\Downloads\\archive\\data\\test", full.names = TR
 }
 rownames(mnist_test) <- list.files(path = "U:\\Downloads\\archive\\data\\test")
 
-
 mnist_train <- NULL
 for(i in list.files(path = "U:\\Downloads\\archive\\data\\train", full.names = TRUE)) {
   input <- image_read(i)
@@ -23,6 +22,8 @@ for(i in list.files(path = "U:\\Downloads\\archive\\data\\train", full.names = T
   mnist_train <- rbind(mnist_train, input_data)
 }
 rownames(mnist_train) <- list.files(path = "U:\\Downloads\\archive\\data\\train")
+
+################################################################
 
 #create y (labels) 
 y_test_c <- rep(c(1,10,2:9), 100)
@@ -37,9 +38,9 @@ y_train_c <- y_train_c[,c(-1)]
 mnist_test <- mnist_test / 255
 mnist_train <- mnist_train / 255
 
-
 ################################################################
-#Models with different optimization algorithms
+
+#Trying out different optimization algorithms
 
 #SGD
 #training
