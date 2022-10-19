@@ -17,6 +17,7 @@ perform **Iteratively Reweighted Least Squares**,
 
 ## Supervised Learning (Classification) with Multilayer Neural Networks (using Chinese MNIST)
 **Code:** [2021_ChineseMNIST_NN.R](https://github.com/xiancaicai/RCode/blob/main/2021_ChineseMNIST_NN.R)
+
 **Packages used: Keras, Magick, Tidyverse.**
 
 <img src="chinesemnist.png" height="200">
