@@ -1,12 +1,10 @@
+#Packages
 library(keras)
 library(tidyverse)
 library(magick)
 
 ################################################################
-
-load("chinese_mnistv2.RData")
-
-#Transformation from images to matrix
+#Original transformation from images to matrix
 mnist_test <- NULL
 for(i in list.files(path = "U:\\Downloads\\archive\\data\\test", full.names = TRUE)) {
   input <- image_read(i)
@@ -24,6 +22,8 @@ for(i in list.files(path = "U:\\Downloads\\archive\\data\\train", full.names = T
 rownames(mnist_train) <- list.files(path = "U:\\Downloads\\archive\\data\\train")
 
 ################################################################
+#Load previously transformed and saved data
+load("chinese_mnistv2.RData")
 
 #create y (labels) 
 y_test_c <- rep(c(1,10,2:9), 100)
