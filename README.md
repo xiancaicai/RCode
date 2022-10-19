@@ -15,7 +15,7 @@ perform **Iteratively Reweighted Least Squares**,
 **Monte Carlo Metropolis Hastings** simulations,
 **Bootstrap** sampling and estimation.
 
-## Supervised Learning (Classification) with Multilayer Neural Networks (using Chinese MNIST)
+## Supervised Learning (Classification) with Multilayer Neural Networks
 **Code:** [2021_ChineseMNIST_NN.R](https://github.com/xiancaicai/RCode/blob/main/2021_ChineseMNIST_NN.R)
 
 **Packages used: Keras, Magick, Tidyverse.**
