@@ -2,13 +2,13 @@
 For some projects, tasks and tests written in R. Both uni projects and personal projects included.
 
 ## :pushpin: Linear Regression, Confidence Intervals and t-Tests
-**Code:** [2021_LinReg_CI_tTest.R](https://github.com/xiancaicai/RCode/blob/main/2021_LinReg_CI_tTest.R)
+**Code:** [LinReg_CI_tTest.R](https://github.com/xiancaicai/RCode/blob/main/LinReg_CI_tTest.R)
 
 Functions which execute linear regression, compute confidence intervals and t-Tests (both classical and stratified).
 (To understand how the actual math works behind the built-in functions so-often used.)
 
 ## :pushpin: Frequentist vs Bayesian estimation
-**Code:** [2021_ResDev_IRLS_Boots_MCMC.R](https://github.com/xiancaicai/RCode/blob/main/2021_ResDev_IRLS_Boots_MCMC.R)
+**Code:** [ResDev_IRLS_Boots_MCMC.R](https://github.com/xiancaicai/RCode/blob/main/ResDev_IRLS_Boots_MCMC.R)
 
 Coded functions to calculate **Residual Deviance**,
 perform **Iteratively Reweighted Least Squares**,
@@ -16,7 +16,7 @@ perform **Iteratively Reweighted Least Squares**,
 **Bootstrap** sampling and estimation.
 
 ## :pushpin: Supervised Learning (Classification) with Multilayer Neural Networks
-**Code:** [2021_ChineseMNIST_NN.R](https://github.com/xiancaicai/RCode/blob/main/2021_ChineseMNIST_NN.R)
+**Code:** [ChineseMNIST_NN.R](https://github.com/xiancaicai/RCode/blob/main/ChineseMNIST_NN.R)
 
 **Packages used: Keras, Magick, Tidyverse.**
 
