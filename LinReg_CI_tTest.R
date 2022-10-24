@@ -1,7 +1,10 @@
-#HWA2021
-library(tidyverse)
+#Without external packages wrote functions which execute linear regression,
+#compute confidence intervals and t-Tests (both classical and stratified).
+#Homework coded with reference to course material.
 
-############################################################ PART 1
+library(tidyverse) #used for plots
+
+############################################################ OLS, CI
 
 #OLS linear regression function
 linear_regression <- function(data, dep, indep, intercept = TRUE) { 
@@ -72,7 +75,7 @@ print.linear_regression_ci <- function(input_obj){
 print(ci_obj)
 
 
-############################################################ PART 2
+############################################################ t-Test
 
 #Function to compute a classical or stratified two-sample t-test.
 test_strat <- function(data) {
@@ -157,8 +160,9 @@ test_strat <- function(data) {
   } #when input is not a data frame/tibble.
 }
 
+############################################################ Testing t-test function
 
-#simulated hypothetical data
+#simulated data
 set.seed(2021)
 strat <- tibble(x = c(rnorm(200, 35), rnorm(200, 55), rnorm(200, 75)),
                 treatment = rep(1:2, 300),
