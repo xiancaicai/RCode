@@ -3,6 +3,7 @@ Some projects, tasks and tests written in R. Both uni projects and personal proj
 
 ## :pushpin: Linear Regression, Confidence Intervals and t-Tests
 **Code:** [LinReg_CI_tTest.R](https://github.com/xiancaicai/RCode/blob/main/LinReg_CI_tTest.R)
+
 Without external packages I wrote functions which execute **linear regression**, compute **confidence intervals** and **t-Tests (both classical and stratified)**, to understand how the math works behind the built-in functions so-often used. Homework coded with reference to course material.
 
 ## :pushpin: Frequentist vs Bayesian estimation
