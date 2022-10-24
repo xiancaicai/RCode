@@ -1,6 +1,12 @@
-#HWA2021
-library(tidyverse)
+#Without external packages I wrote functions to calculate Residual Deviance, perform Iteratively Reweighted Least Squares,
+#Monte Carlo Metropolis Hastings simulations, Bootstrap sampling and estimation.
+#Homework coded with reference to course material.
 
+library(tidyverse) #used for plots
+
+############################################################ Simulating data
+
+#Simulating data to later test functions
 set.seed(8)
 n  <- 100
 x1 <- rnorm(n)
@@ -14,9 +20,8 @@ df <- data.frame(y, X)
 ggplot(data = df, mapping = aes(x = y)) +
   geom_histogram() #histogram of the generated data
 
-############################################################ PART 1
+############################################################ FREQUENTIST ESTIMATION
 
-#FREQUENTIST ESTIMATION
 #Residual Deviance function
 deviance = function(y, X, beta){
   #y - vector of dependent data
@@ -65,11 +70,12 @@ irls = function(y, X, epsilon = 1e-6){
   return(beta)
 }
 
+############################################# Testing function
+
 irls(y, X, epsilon = 1e-6)
 
-############################################################ PART 2
+############################################################ BAYESIAN ESTIMATION
 
-#BAYESIAN ESTIMATION
 #With a Markov Chain Monte Carlo algorithm and Metropolis-Hastings Random Walk proposals are sampled from the posterior of beta.
 
 #sig: the variance of the prior on beta
@@ -146,6 +152,8 @@ bootstrap <- function(y, X, B, p){
   }
   return(beta_freq)
 }
+
+############################################# Testing functions, plotting data
 
 beta_freq <- bootstrap(y, X, 1000, 3) #generate bootstrap sample of 1000
 
