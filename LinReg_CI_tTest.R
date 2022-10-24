@@ -2,7 +2,7 @@
 #compute confidence intervals and t-Tests (both classical and stratified).
 #Homework coded with reference to course material.
 
-library(tidyverse) #used for plots
+library(tidyverse) #used to access US economic time series data to test functions
 
 ############################################################ OLS, CI
 
@@ -52,15 +52,6 @@ ci <- function(lin_mod, parameter, alpha) {
   return(return_ci)
 }
 
-#Linear regression, output to be used in function ci()
-lin_mod <- linear_regression(ggplot2::economics,
-                             dep = "pce",
-                             indep = c("unemploy", "pop", "psavert"))
-
-#An example of the functon in use, with its output
-ci_obj <- ci(lin_mod, "unemploy", 0.05)
-ci_obj
-
 print.linear_regression_ci <- function(input_obj){
   parameter <- input_obj[[1]]
   lower <- input_obj[[2]]
@@ -71,6 +62,16 @@ print.linear_regression_ci <- function(input_obj){
              deparse(substitute(parameter)), " is given by: \n(",
              lower, ",", upper,")."))
 }
+
+############################################# Testing functions
+
+lin_mod <- linear_regression(ggplot2::economics,
+                             dep = "pce",
+                             indep = c("unemploy", "pop", "psavert"))
+
+#An example of the functon in use, with its output
+ci_obj <- ci(lin_mod, "unemploy", 0.05)
+ci_obj
 
 print(ci_obj)
 
@@ -160,7 +161,7 @@ test_strat <- function(data) {
   } #when input is not a data frame/tibble.
 }
 
-############################################################ Testing t-test function
+############################################# Testing t-test function
 
 #simulated data
 set.seed(2021)
