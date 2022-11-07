@@ -1,6 +1,7 @@
+#Semi-Supervised Hidden Markov Model used for Part-of-speech (POS) tagging
 #Project coded in Stan and R for a course in Bayesian statistics.
 #Stan code largely built via examples in the Stan User's Guide.
-#See separate file: HMMViterbi.stan
+#See separate file: HMM_Viterbi.stan
 
 #Packages
 library(rstan)
