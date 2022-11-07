@@ -1,3 +1,6 @@
+//Semi-Supervised Hidden Markov Model
+//largely built on examples from Stan User's Guide
+
 data {
   int<lower=1> K; // num categories
   int<lower=1> V; // num words
