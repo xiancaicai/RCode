@@ -1,6 +1,15 @@
 # RCode
 Some projects, tasks and tests written in R. Both uni projects and personal projects included.
 
+
+## :pushpin: Semi-supervised Hidden Markov Model for Part-of-speech tagging
+**Code:** [HMM_POS.R](https://github.com/xiancaicai/RCode/blob/main/HMM_POS.R) and [HMM_Viterbi.stan](https://github.com/xiancaicai/RCode/blob/main/HMM_Viterbi.stan)
+
+**Packages used: rstan, MCMCpack, loo.**
+
+Studied Hidden Markov Models (HMM) and used them in Part-of-speech (POS) tagging, for a Bayesian project. In summary, the HMM is a probabilistic model that can be used to model hidden non-observable states by observing past sequences. Here, sequences of words are observed, where their respective POS category (such as verb, adjective, etc.) are seen as hidden latent states. Given a new sentence with an unobserved state sequence, the models predict the most probable hidden state POS sequence using the Viterbi algorithm.
+
+
 ## :pushpin: Linear Regression, Confidence Intervals and t-Tests
 **Code:** [LinReg_CI_tTest.R](https://github.com/xiancaicai/RCode/blob/main/LinReg_CI_tTest.R)
 
