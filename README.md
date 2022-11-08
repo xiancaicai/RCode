@@ -9,7 +9,7 @@ Some projects, tasks and tests written in R. Both uni projects and personal proj
 
 Studied Hidden Markov Models (HMM) and used them in Part-of-speech (POS) tagging, for a Bayesian project. In summary, the HMM is a probabilistic model that can be used to model hidden non-observable states by observing past sequences. Here, sequences of words are observed, where their respective POS category (such as verb, adjective, etc.) are seen as hidden latent states. Given a new sentence with an unobserved state sequence, the models predict the most probable hidden state POS sequence using the Viterbi algorithm.
 
-## :pushpin: Supervised Learning (Classification) with Multilayer Neural Networks [2021]
+## :pushpin: Supervised Learning with Multilayer Neural Networks [2021]
 **Code:** [ChineseMNIST_NN.R](https://github.com/xiancaicai/RCode/blob/main/ChineseMNIST_NN.R)
 
 **Packages used: Keras, Magick, Tidyverse.**
